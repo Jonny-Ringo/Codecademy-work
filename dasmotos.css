@@ -7,7 +7,7 @@ h1 {
     font-weight: bold;
     color: khaki;
     text-align: center;
-    background-image: url(pattern.jpeg);
+    background-image: url("pattern.jpeg");
     margin-bottom: 50px;
 }
 .brushes h2 {
