@@ -1,18 +1,38 @@
+@font-face {
+  font-family: 'WesternBangBang-Regular';
+  src: url('fonts/WesternBangBang-Regular.ttf') format('truetype'),
+       url('fonts/WesternBangBang-Regular.woff') format('woff'),
+       url('fonts/WesternBangBang-Regular.woff2') format('woff2');
+}
+
+
+
+.header,h1 {
+  margin-bottom: 5px;
+  font-family: 'WesternBangBang-Regular';
+  font-weight: normal;
+  font-size: 85px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
 body {
     background-color: #000000;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
   }
-  
+
+ 
+
   .countdown-container {
     padding: 20px;
   }
   
-  h1 {
-    font-size: 36px;
+  .countdown-container h1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
   }
   
   .countdown {
