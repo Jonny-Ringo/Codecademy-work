@@ -7,11 +7,41 @@
 
 
 
-.header,h1 {
-  margin-bottom: 5px;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the text horizontally */
+}
+
+.header-img, img {
+  height: 12vh; /* adjust the height based on the viewport height */
+  margin-right: 15px;
+}
+
+.header-title, h1 {
+  margin: 0; /* remove margin bottom */
   font-family: 'WesternBangBang-Regular';
   font-weight: normal;
-  font-size: 85px;
+  font-size: 8vw; /* adjust the font size based on the viewport width */
+  color: #ffffff;
+  text-align: center;
+}
+.subheader,h2 {
+  margin: 0;
+  font-family: 'WesternBangBang-Regular';
+  font-weight: lighter;
+  font-size: 3vw; /* adjust the font size based on the viewport width */
+  color: #ffffff;
+  text-align: center;
+}
+
+.subheader,h3 {
+  margin: 0;
+  margin-bottom: 1vh;
+  font-family: 'WesternBangBang-Regular';
+  font-weight: lighter;
+  font-size: 1.5vw; /* adjust the font size based on the viewport width */
   color: #ffffff;
   text-align: center;
 }
@@ -59,6 +89,47 @@ body {
     margin-top: 5px;
     color: #ffffff;
     text-align: center;
+  }
+  
+  
+
+  footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-image img {
+    border-radius: 50%; /* make image round */
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .footer-contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    text-decoration: underline;
   }
   
   
