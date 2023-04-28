@@ -14,12 +14,12 @@
   justify-content: center; /* center the text horizontally */
 }
 
-.header-img, img {
+.header-img {
   height: 12vh; /* adjust the height based on the viewport height */
   margin-right: 15px;
 }
 
-.header-title, h1 {
+.main-header {
   margin: 0; /* remove margin bottom */
   font-family: 'WesternBangBang-Regular';
   font-weight: normal;
@@ -51,13 +51,18 @@ body {
     background-color: #000000;
   }
 
- 
 
   .countdown-container {
-    padding: 20px;
+    padding: 10px;
+    left: 0;
+    position: absolute;
+    transform: scale(0.60);
+    transform-origin: left top;
+    margin-top: 15px;
+    margin-left: 10px;
   }
   
-  .countdown-container h1 {
+  .countdown-container,h1 {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
