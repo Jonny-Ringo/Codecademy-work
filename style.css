@@ -103,7 +103,65 @@ body {
 }
 
   
+  .videos h2 {
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+
+.PCs h2.section-title {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.PCs .video-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.PCs .video {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-bottom: 1%;
+  text-align: center;
   
+}
+
+.PCs .video-title {
+  margin-top: 3%;
+}
+
+
+
+.auto h2.section-title {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.auto .video-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.auto .video {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.auto .video-title {
+  margin-top: 3%;
+}
 
   footer {
     background-color: #2b2b2b;
