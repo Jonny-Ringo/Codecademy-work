@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'WesternBangBang-Regular';
   src: url('fonts/WesternBangBang-Regular.ttf') format('truetype'),
@@ -22,6 +23,15 @@
   justify-content: center; /* center the text horizontally */
 }
 
+.header a {
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline 1px;
+  color: #ffffff;
+}
+
 .header-img {
   height: 12vh; /* adjust the height based on the viewport height */
   margin-right: 15px;
@@ -34,7 +44,10 @@
   font-size: 8vw; /* adjust the font size based on the viewport width */
   color: #ffffff;
   text-align: center;
+  text-decoration: none;
 }
+
+
 .subheader,h2 {
   margin: 0;
   font-family: 'WesternBangBang-Regular';
@@ -47,6 +60,7 @@
 .subheader,h3 {
   margin: 0;
   margin-bottom: 1vh;
+  margin-top: 1%;
   font-family: 'WesternBangBang-Regular';
   font-weight: lighter;
   font-size: 1.5vw; /* adjust the font size based on the viewport width */
@@ -59,51 +73,290 @@ body {
     background-color: #000000;
 }
 
-.countdown-container {
-    padding: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    transform: scale(0.6);
-    transform-origin: right top;
-}
-  
-.countdown-container h1 {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    color: #ffffff;
+/* Gas */
+
+@media (max-width: 768px) {
+  .gas-price-widget {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    height: auto;
+    width: 30%;
     text-align: center;
-}
-  
-.countdown {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-  
-.countdown-item {
-    margin: 0 10px;
-}
-  
-.countdown-value {
-    font-size: 48px;
-    font-weight: bold;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-  
-.countdown-label {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #ffffff;
-    text-align: center;
+    scale: 60%;
+  }
+
+  .gas-price-value {
+    margin-bottom: 10px;
+  }
+
+  .gas-price-value span:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .gas-price-header {
+    margin-top: 10px;
+  }
 }
 
+
+.gas-price-widget {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2%;
+}
+
+.gas-price-header {
+  font-family: Courier;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  margin-top: 5px;
+}
+
+.gas-price-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Courier;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.gas-price-value span:not(:last-child) {
+  margin-right: 5px;
+}
+
+.gas-price-value span:empty:before {
+  content: "--";
+}
+
+.gas-price-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+
+
+
+
+/* BTC Countdown */
+.countdown-container {
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: scale(0.6);
+  transform-origin: right top;
+}
+
+@media only screen and (max-width: 1000px) {
+.countdown-container {
+  position: static;
+  transform: none;
+  padding: 0;
+  margin-top: 10px;
+  transform: scale(0.7);
+  transform-origin: center;
+}
+}
+
+.countdown-container h1 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+  text-align: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.countdown-item {
+  margin: 0 10px;
+}
+
+.countdown-value {
+  font-size: 48px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.countdown-label {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/* NAV Bar */
+
+
+nav {
+  background-color: #000000;
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'WesternBangBang-Regular';
+  font-weight: lighter;
+  font-size: 140%;
   
-  .videos h2 {
+}
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 2px solid #ffffff;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+ /* Mobile Nav Bar */
+
+ @media screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  nav li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    margin: 0;
+    line-height: 1em;
+    font-size: 2em;
+    color: #ffffff;
+  }
+  
+  nav .menu-icon:before {
+    content: '\2630';
+  }
+  
+  nav .menu-icon.active:before {
+    content: '\2715';
+  }
+}
+
+/* Home Page */
+
+.intro h3 {
+  font-weight: 100;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 3%;
+  font-family: Courier, 'Courier New';
+}
+
+.podcast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.podcast a {
+  text-decoration: none;
+  font-family: Courier, 'Courier New';
+  color: #ffffff;
+}
+
+.podcast a:hover {
+  text-decoration: underline;
+  font-family: Courier, 'Courier New';
+  color: #ffffff;
+}
+
+.podcast iframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  height: 152px;
+}
+
+.podcast h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 100;
+  font-family: Courier, 'Courier New';
+  font-size: larger;
+}
+
+
+
+/* DIY page */
+
+.DIY-header h1 {
+  margin: 0; /* remove margin bottom */
+  font-family: 'WesternBangBang-Regular';
+  font-weight: 1;
+  font-size: 8vw; /* adjust the font size based on the viewport width */
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.videos h2 {
   margin-bottom: 3%;
   margin-top: 5%;
 }
@@ -161,7 +414,81 @@ body {
 
 .auto .video-title {
   margin-top: 3%;
+  margin-bottom: 6%;
 }
+
+/* Mobile-only styles for DIY page */
+
+@media screen and (max-width: 767px) {
+
+  .DIY-header h1 {
+    font-size: 10vw; /* adjust the font size based on the viewport width */
+  }
+
+  .videos h2 {
+    font-size: 4vw; /* adjust the font size based on the viewport width */
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+
+  .PCs h2.section-title {
+    font-size: 4vw; /* adjust the font size based on the viewport width */
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .PCs .video-container {
+    display: block;
+    text-align: center;
+  }
+
+  .PCs .video {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .PCs .video-title {
+    font-size: 4vw; /* adjust the font size based on the viewport width */
+    margin-top: 5%;
+  }
+
+  .auto h2.section-title {
+    font-size: 4vw; /* adjust the font size based on the viewport width */
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .auto .video-container {
+    display: block;
+    text-align: center;
+  }
+
+  .auto .video {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .auto .video-title {
+    font-size: 4vw; /* adjust the font size based on the viewport width */
+    margin-top: 5%;
+  }
+
+}
+
+/* Educational Resources */
+
+.educational-header h1 {
+  margin: 0; /* remove margin bottom */
+  font-family: 'WesternBangBang-Regular';
+  font-weight: 1;
+  font-size: 8vw; /* adjust the font size based on the viewport width */
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+/* Footer */
 
   footer {
     background-color: #2b2b2b;
@@ -201,7 +528,4 @@ body {
   .footer-contact a:hover {
     text-decoration: underline;
   }
-  
-  
-
   

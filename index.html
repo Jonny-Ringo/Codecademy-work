@@ -4,9 +4,9 @@
   <title>JonnyRingo.eth</title>
 
   <!-- Open Graph meta tags for social media sharing -->
-  <meta property="og:title" content="Bitcoin Halving Countdown Clock">
-  <meta property="og:description" content="Watch the countdown to the Bitcoin Halving Live!">
-  <meta property="og:image" content="preview.PNG"> <!-- URL of the image you want to use as the preview image -->
+  <meta property="og:title" content="JonnyRingo.eth">
+  <meta property="og:description" content="Watch the Bitcoin Halving countdown Live, learn about DAOs, fix your car, or even build a mining rig!">
+  <meta property="og:image" content="images/preview.PNG"> <!-- URL of the image you want to use as the preview image -->
   <meta property="og:url" content="https://jonny-ringo.github.io"> <!-- URL of your page -->
   <meta property="og:type" content="website">
   <link rel="icon" href="images/jricon.jpg" type="image/x-icon">
@@ -15,8 +15,34 @@
 
   
 </head>
+
+
+
 <body>
+  <div class="gas-price-widget">
+    <p class="gas-price-value">
+      <span class="gas-price-slow">🐢 0</span> 
+      <span>|</span> 
+      <span class="gas-price-medium">👍 0</span> 
+      <span>|</span> 
+      <span class="gas-price-fast">⚡️ 0</span> 
+    </p>
+    <div class="gas-price-header-container">
+      <h2 class="gas-price-header">ETH Gas Prices</h2>
+    </div>
+  </div>
+  
+  
+  
+  <script src="gas.js"></script>
+  
+  
+  
+
   <div class="header">
+
+    <img class="header-img" src="images/jricon.jpg">
+    <a href="https://twitter.com/JonnyRingo711"><h1 class="main-header" target="_blank">JonnyRingo.eth</h1></a>
 
     <div class="countdown-container">
       <h1>Bitcoin Halving Countdown</h1>
@@ -39,10 +65,9 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="BTC-halving.js"></script>
+    
 
-    <img class="header-img" src="images/jricon.jpg">
-    <h1 class="main-header">JonnyRingo.eth</h1> 
     
   </div>
   <br>
@@ -51,72 +76,31 @@
         <h3>Learn about Web3, DAOs, Hardware, DIY Projects, & more</h3>
   </div>
 
-  <div class="videos">
-    <div class="PCs">
-      <h2 class="section-title">Hardware, PCs, & Mining DIY</h2>
-    
-      <div class="video-container">
-        <div class="video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/aTJ_QWmPQy8"
-            title="How to Set Up Server Power Supplies (PSU) for Mining"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-          <h3 class="video-title">How to Set Up Server Power Supplies (PSU) for Mining</h3>
-        </div>
-    
-      </div>
-    </div>
-    
-    
-      <div class="auto">
-        <h2 class="section-title">Automotive Help DIY</h2>
-      
-        <div class="video-container">
-          <div class="PSF">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/F86AS8k9pTY"
-              title="Electronic Power Steering Fluid Check 2014 Chrysler 300 3.6"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
-            <h3 class="video-title">Electronic Power Steering Fluid Check 2014 Chrysler 300 3.6</h3>
-          </div>
-      
-          <div class="BMSF">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/duuDwghMjWc"
-              title="2009 - Newer Nissan Rogue Blower Motor Stays On - Fix"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            ></iframe>
-            <h3 class="video-title">2009 - Newer Nissan Rogue Blower Motor Stays On - Fix</h3>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="navigation">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diy-videos-tutorials.html">DIY Videos & Tutorials</a></li>
+        <li><a href="educational-resources.html">Educational Resources</a></li>
+        <li><a href="community-operations-management.html">Community Operations Management</a></li>
+      </ul>
+    </nav>    
+  </div>
+  <br>
 
+  <div class="intro">
+    <h3>Welcome to my personal DIY and project information website! I use this website to host information about myself, my career, articles, educational material, DIY guides, and more!<br> Thanks for visiting!</h3>
+  </div>
 
+  <div class="podcast">
+    <iframe src="https://open.spotify.com/embed/episode/01KLyqjW3DnyYgpZwEwExt?utm_source=generator" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <h3>Here is a recent podcast episode I was featured in, which talks a lot about my history and the current project I am working with, <a href="https://sarcophagus.io" target="_blank">Sarcophagus</a>.</h3>
+  </div>
+  <br>
 
-</body>
-
-<div class="diy">
-  <h1>DIY Tutorials & Help</h1>
-</div>
-
-<div class="products">
   
-</div>
+</body>
+  
 
 <footer>
   <div class="footer-content">
@@ -133,3 +117,5 @@
   </div>
 </footer>
 </html>
+
+
