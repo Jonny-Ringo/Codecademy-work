@@ -342,6 +342,17 @@ nav a:hover {
   font-size: larger;
 }
 
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.tl {
+  width: 25%;
+}
 
 
 /* DIY page */
